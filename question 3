@@ -1,0 +1,26 @@
+C:\Users\kale viswanath\Desktop\FSD\B44_WD_JAN6\day3.html\day 5\day 6\DAY 6 TASK 6 QUESTION 3.html
+
+
+CODE:
+
+    <script>
+          class person{
+            constructor(name,DOB,qualification,location,height,weight,colour,hobiees,job,salary,position){
+                this.name=name,
+                this.DOB=DOB,
+                this.qualification=qualification,
+                this.location=location,
+                this.height=height,
+                this.weight=weight,
+                this.colour=colour,
+                this.hobiees=hobiees,
+                this.job=job,
+                this.salary=salary,
+                this.position=position
+
+            }
+            
+        }
+        var obj=new person("ARJUN",2000,"BTECH","HYD","90","BLACK","playing games","ABC PVT LTD","3.6LPA","system engineer")
+        console.log(obj)
+    </script>
