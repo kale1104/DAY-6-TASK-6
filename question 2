@@ -1,0 +1,17 @@
+C:\Users\kale viswanath\Desktop\FSD\B44_WD_JAN6\day3.html\day 5\day 6\DAY 6 TASK 6 QUESTION 2.html
+
+
+CODE:
+    <script>
+        class circle{
+            constructor(radius,colour){
+                this.colour=colour;
+            
+                if(radius=="double"){
+                    this.radius=2
+                }
+            }
+        }
+        var change=new circle("double","red")
+        console.log(change)
+    </script>
