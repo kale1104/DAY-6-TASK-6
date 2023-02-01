@@ -1,1 +1,84 @@
 C:\Users\kale viswanath\Desktop\FSD\B44_WD_JAN6\day3.html\day 5\day 6\DAY 6 TASK 6 QUESTION 1.html
+<script>
+        //a)a) Write a constructor for the class Movie,
+        //  which takes a String representing the title of the movie,
+          // a String representing the studio, and a String representing the rating as its arguments, 
+           //and sets the respective class properties to these values.
+          class Movie{
+             constructor(title,studio,rating){
+                 this.title=title,
+                  this.studio=studio,
+                  this.rating=rating
+              }
+          }
+
+
+        b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+        class FILM{
+              constructor(title,studio,rating){
+                  this.title=title;
+                  this.studio=studio;
+                  if(rating==undefined||rating==null){
+                      this.rating="PG"
+                 }
+                  else{
+                      this.rating=rating
+                  }
+              }
+            
+          }
+          var obj=new FILM("casino royale","eon production")
+          console.log(obj)
+
+
+//c) Write a method getPG, which takes an array of base type Movie as its argument,
+ //and returns a new array of only those movies in the input array with a rating of "PG".
+// You may assume the input array is full of Movie instances. The returned array need not be full.
+
+class Movie{
+    constructor(title,studio,rating){
+                 this.title=title;
+                 this.studio=studio;
+                 if(rating==undefined||rating==null){
+                     this.rating="PG"
+                 }
+                 else{
+                     this.rating=rating
+                 }
+             }
+             getPG(array){
+                let result=[]
+                for(var i=0;i<array.length;i++){
+                    if(array[i].rating=="PG"){
+                        result.push(array[i])
+                    }
+                }
+                return result
+             }
+         }
+         var film1=new Movie("casino royale","eon production","PG13")
+         
+         var film2=new Movie("ABC","eon production")
+         
+         var film3=new  Movie("PQR","eon production","PG20")
+
+         var film4=new  Movie("xyz","eon production")
+
+         let array=[film1,film2,film3,film4]
+         console.log(film2.getPG(array))
+
+
+        //  d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, 
+        //  the studio “Eon Productions”, and the rating “PG­13”
+        class cinema{
+              constructor(title,studio,rating){
+                  this.title=title,
+                  this.studio=studio,
+                  this.rating=rating
+              }
+          }
+          var obj=new cinema("casino royale","eon production","PG13")
+          console.log(obj)
+
+
+    </script>
